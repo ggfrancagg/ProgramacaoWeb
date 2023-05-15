@@ -23,7 +23,7 @@ if (isset($_POST['botao'])) {
 	if($usuario->verificarLogin($usuario->getUsuario(),$usuario->getSenha())){
 		echo "<h2>Login com sucesso!</h2>";
 		$usuario->logar($usuario->getUsuario());
-		echo "<meta http-equiv='refresh' content='2s;url=principal.php'>";
+		echo "<meta http-equiv='refresh' content='2;url=principal.php'>";
 	}else{
 		echo "<h2>Usuário ou senha incorretos!</h2>";
 	}
