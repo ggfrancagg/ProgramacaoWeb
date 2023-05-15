@@ -44,6 +44,11 @@ class Usuario{
 			return false;
 		}
 	}
+
+	public function logar($usuario)
+	{
+		setcookie("usuario","$usuario",time()+172800);
+	}
 }
 
 ?>

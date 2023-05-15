@@ -4,7 +4,7 @@ require_once 'model/Usuario.php';
 
 $usuario=new Usuario();
 if($usuario->estaLogado()){
-	echo "<h2>Bem vindo ".$usuario->getUsuario()."</h2>";
+	echo "<h2>Bem vindo ".$_COOKIE['usuario']."</h2>";
 	echo "<a href='principal.php'>Entrar</a>";
 }else{
 ?>
@@ -22,7 +22,8 @@ if (isset($_POST['botao'])) {
 	$usuario->setSenha($_POST['senha']);
 	if($usuario->verificarLogin($usuario->getUsuario(),$usuario->getSenha())){
 		echo "<h2>Login com sucesso!</h2>";
-		echo "<meta http-equiv='refresh' content='2s;url='principal.php''>";
+		$usuario->logar($usuario->getUsuario());
+		echo "<meta http-equiv='refresh' content='2s;url=principal.php'>";
 	}else{
 		echo "<h2>Usuário ou senha incorretos!</h2>";
 	}
