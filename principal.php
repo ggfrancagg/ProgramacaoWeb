@@ -3,7 +3,7 @@ require_once 'cabecalho.php';
 ?>
 <div id="topo">
 	<div id="logo">
-		<img src="img/logo.jpg">
+		<img src="img/livro.png">
 	</div>
 	<div id="menu">
 		<ul class="nav">
