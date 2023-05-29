@@ -1,6 +1,7 @@
 <?php
 
 require_once 'model/Usuario.php';
+require_once 'cabecalho.php';
 
 $usuario=new Usuario();
 if($usuario->estaLogado()){

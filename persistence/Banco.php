@@ -20,9 +20,9 @@ class Banco{
 	{
 		$resposta=$this->conexao->query($sql);
 		if($resposta){
-			return $true;
+			return true;
 		}else{
-			return $false;
+			return false;
 		}
 	}
 
