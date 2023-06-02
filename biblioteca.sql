@@ -68,8 +68,7 @@ CREATE TABLE `livro` (
   `autor` varchar(100) DEFAULT NULL,
   `editora` varchar(30) DEFAULT NULL,
   `ano` int(11) DEFAULT NULL,
-  `cidade` varchar(30) DEFAULT NULL,
-  `quantidade` int(11) DEFAULT NULL
+  `cidade` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------

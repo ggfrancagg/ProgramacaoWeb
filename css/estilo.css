@@ -108,6 +108,12 @@ form.minibotao{
 	max-width:1vw;
 	max-height:0.5vh;
 }
+form.minioutro{
+	width: auto;
+	height: auto;
+	margin:0px;
+	background: transparent;
+}
 table{
 	transform:translate(50%,50%);
 	max-width:80vw;

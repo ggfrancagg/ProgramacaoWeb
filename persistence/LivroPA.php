@@ -53,6 +53,17 @@ class LivroPA
             return $consulta;
         }
     }
+
+    public function buscar($busca)
+    {
+        $sql="select * from livro where titulo like '%$busca%' or autor like '%$busca%' or editora like '%$busca%' or cidade like '%$busca%' or ano='$busca' or quantidade='$busca'";
+        $consulta=$this->con->consultar($sql);
+        if (!$consulta) {
+            return false;
+        }else{
+            return $consulta;
+        }
+    }
     
     
 }
